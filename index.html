@@ -3,71 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Sederhana</title>
+    <title>Klasis Alor Timur Laut</title>
     <style>
+        /* Gaya umum untuk halaman */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
         }
-        header {
-            background: #333;
+
+        /* Gaya untuk navigasi */
+        nav {
+            background-color: #333;
             color: #fff;
             padding: 1rem 0;
-            text-align: center;
         }
-        nav {
-            background: #444;
-            padding: 0.5rem;
-            text-align: center;
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
         }
-        nav a {
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
             color: #fff;
             text-decoration: none;
-            margin: 0 1rem;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
         }
-        nav a:hover {
-            text-decoration: underline;
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
         }
-        .container {
-            padding: 2rem;
+
+        /* Dropdown menu */
+        nav ul li {
+            position: relative;
         }
-        footer {
-            background: #333;
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        nav ul li ul li {
+            padding: 5px 15px;
+        }
+
+        nav ul li ul li a {
             color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        nav ul li:hover ul {
+            display: block;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Selamat Datang di Website Saya</h1>
-        <p>Ini adalah website sederhana</p>
-    </header>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li>
+                <a href="#profil">Profil</a>
+                <ul>
+                    <li><a href="#visi-misi">Visi & Misi</a></li>
+                    <li><a href="#sejarah">Sejarah</a></li>
+                    <li><a href="#pengurus">Pengurus</a></li>
+                </ul>
+            </li>
+            <li><a href="#pelayanan">Pelayanan</a></li>
+            <li><a href="#kegiatan">Kegiatan</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
     </nav>
-    <div class="container">
-        <section id="home">
-            <h2>Home</h2>
-            <p>Ini adalah halaman utama website.</p>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>Website ini dibuat untuk tujuan pembelajaran.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Hubungi kami melalui email: <a href="mailto:email@contoh.com">email@contoh.com</a>.</p>
-        </section>
+    <div style="padding: 2rem; text-align: center;">
+        <h1>Selamat Datang di Website Klasis Alor Timur Laut</h1>
+        <p>Website ini menjadi pusat informasi dan pelayanan untuk seluruh warga jemaat.</p>
     </div>
-    <footer>
-        <p>&copy; 2025 Website Sederhana</p>
-    </footer>
 </body>
 </html>
